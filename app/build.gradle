@@ -61,6 +61,9 @@ android {
     googleplayer {
       manifestPlaceholders = [UMENG_CHANNEL_VALUE: "googleplayer"]
     }
+    baidu {
+      manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+    }
     productFlavors.all { flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
     }
   }
